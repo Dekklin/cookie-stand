@@ -19,6 +19,18 @@ body {
   width: 40%;
 
 }
+
+table {
+	border: 3px solid red;
+  width: 90%;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+tr, td, th {
+  border: 3px solid purple;
+}
+
 div.lists {
   background-color: plum;
   font-family: 'Roboto Condensed', sans-serif;
