@@ -22,13 +22,17 @@ body {
 
 table {
 	border: 3px solid red;
-  width: 80%;
-  margin: 30px;
+  width: 90%;
+  margin: auto;
   float: center;
+  text-align: center;
 }
 
 tr, td, th {
   border: 3px solid purple;
+}
+th {
+  font-weight: bold;
 }
 
 div.lists {
@@ -40,4 +44,18 @@ div.lists {
   border: 4px solid purple;
   margin: 5px;
   
+}
+form {
+  font-family: 'handwriting';
+  src: url('fonts/journal-webfont.woff2') format('woff2'),
+  url('fonts/journal-webfont.woff') format('woff');
+  font-size: 15px;
+  border: 5px solid green;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  width: 95%;
+}
+[name~="minCus"], [name~="maxCus"], [name~="avgCookieSold"] {
+  width: 60px;
 }
