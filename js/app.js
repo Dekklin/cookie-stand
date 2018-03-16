@@ -1,10 +1,15 @@
-var hours = ['6am', '7am', '8am', '9am', '10am', '11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
+'use strict';
+
+var hours = ['6am', '7am', '8am', '9am', '10am', '11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
 
 //Empty table to contain stores
 var allStores = [];
 //Attatching storetable to the element in HTML
 var storeTable = document.getElementById('storetable');
+//Attatching var storeForm to the form for new Store
+var storeForm = document.getElementById('storeForm');
 
+storeForm.addEventListener('submit', addNewStore);
 
 //Constructor Function
 function Store(location, minCus, maxCus, avgCookieSold) {
@@ -16,7 +21,6 @@ function Store(location, minCus, maxCus, avgCookieSold) {
   this.storeTotal = 0;
   this.hourlyCookiesArray = [];
   allStores.push(this);
-
 }
 
 // Render is going to push the information from the constructor into the table
@@ -51,15 +55,14 @@ Store.prototype.render = function () {
 };
 
 // Creating Objects through the Store CONSTRUCTOR
+
+
+
 new Store('1st and Pike', 23, 65, 6.3);
 new Store('SeaTac Airport', 3, 24, 1.2);
 new Store('Seattle Center', 11, 38, 3.7);
 new Store('Capitol Hill', 20, 38, 2.3);
 new Store('Alki', 2, 16, 4.6);
-
-
-var storeForm = document.getElementById('storeForm');
-
 
 function renderAllStores() {
   for(var i in allStores) {
@@ -82,7 +85,6 @@ function addNewStore(event) {
   renderAllStores();
   makeFooterRow();
 }
-storeForm.addEventListener('submit', addNewStore);
 
 // Function to create a header for the table
 function makeHeaderRow() {
