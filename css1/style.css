@@ -13,7 +13,11 @@ div#contactHL {
 }
 div#salesHL {
   width: 100%;
+<<<<<<< HEAD
   display: inline-block;
+=======
+  display: block;
+>>>>>>> ed021fc17fb39474ed926af379acfe217a4ebbae
   text-align: center;
   padding-bottom: 15px;
 }
@@ -68,6 +72,7 @@ table {
 tr, td, th {
   border: 3px solid;
   padding: auto;
+<<<<<<< HEAD
 }
 td {
   border: 3px solid grey;
@@ -75,6 +80,15 @@ td {
   background-color: black;
   color: #c9ced6;
 }
+=======
+}
+td {
+  border: 3px solid grey;
+  padding: 5px;
+  background-color: black;
+  color: #c9ced6;
+}
+>>>>>>> ed021fc17fb39474ed926af379acfe217a4ebbae
 th {
   font-weight: bold;
   font-size: 22px;
@@ -113,6 +127,7 @@ form {
 }
 [name~="minCus"], [name~="maxCus"], [name~="avgCookieSold"] {
   width: 60px;
+<<<<<<< HEAD
 }
 section#links {
   display: inline-block;
@@ -123,4 +138,6 @@ a#saleshp {
 }
 a#contactp {
   display: inline-block;
+=======
+>>>>>>> ed021fc17fb39474ed926af379acfe217a4ebbae
 }

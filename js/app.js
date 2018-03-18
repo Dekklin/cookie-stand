@@ -77,16 +77,27 @@ function addNewStore(event) {
   var newLocation = event.target.location.value;
   var newMinCus = parseInt(event.target.minCus.value);
   var newMaxCus = parseInt(event.target.maxCus.value);
+<<<<<<< HEAD
   var newAvgCookieSold = parseFloat(event.target.avgCookieSold.value);
 
   new Store(newLocation, newMinCus, newMaxCus, newAvgCookieSold);
 
+=======
+  var newAvgCookieSold = parseInt(event.target.avgCookieSold.value);
+  console.log(typeof newMinCus);
+  new Store(newLocation, newMinCus, newMaxCus, newAvgCookieSold);
+>>>>>>> ed021fc17fb39474ed926af379acfe217a4ebbae
   storeTable.innerHTML = '';
   makeHeaderRow();
   renderAllStores();
   makeFooterRow();
+<<<<<<< HEAD
   console.log(newLocation, newMinCus, newMaxCus, newAvgCookieSold);
 }
+=======
+}
+
+>>>>>>> ed021fc17fb39474ed926af379acfe217a4ebbae
 // Function to create a header for the table
 function makeHeaderRow() {
   var trElement = document.createElement('tr');
@@ -109,7 +120,10 @@ function makeHeaderRow() {
 function makeFooterRow() {
   var companyTotal = 0;
   var trElement = document.createElement('tr');
+<<<<<<< HEAD
   trElement.setAttribute('tr', 'footer');
+=======
+>>>>>>> ed021fc17fb39474ed926af379acfe217a4ebbae
   var thElement = document.createElement('th');
   var tdElement = document.createElement('td');
   thElement.textContent = 'Totals';
