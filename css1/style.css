@@ -13,7 +13,7 @@ div#contactHL {
 }
 div#salesHL {
   width: 100%;
-  display: block;
+  display: inline-block;
   text-align: center;
   padding-bottom: 15px;
 }
@@ -113,4 +113,14 @@ form {
 }
 [name~="minCus"], [name~="maxCus"], [name~="avgCookieSold"] {
   width: 60px;
+}
+section#links {
+  display: inline-block;
+  color: red;
+}
+a#saleshp {
+  float: left;
+}
+a#contactp {
+  display: inline-block;
 }

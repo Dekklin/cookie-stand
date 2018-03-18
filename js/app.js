@@ -78,8 +78,9 @@ function addNewStore(event) {
   var newMinCus = parseInt(event.target.minCus.value);
   var newMaxCus = parseInt(event.target.maxCus.value);
   var newAvgCookieSold = parseFloat(event.target.avgCookieSold.value);
-  console.log(typeof newAvgCookieSold);
+
   new Store(newLocation, newMinCus, newMaxCus, newAvgCookieSold);
+
   storeTable.innerHTML = '';
   makeHeaderRow();
   renderAllStores();
@@ -108,6 +109,7 @@ function makeHeaderRow() {
 function makeFooterRow() {
   var companyTotal = 0;
   var trElement = document.createElement('tr');
+  trElement.setAttribute('tr', 'footer');
   var thElement = document.createElement('th');
   var tdElement = document.createElement('td');
   thElement.textContent = 'Totals';
